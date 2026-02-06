@@ -1,81 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Student Notes</title>
+<title>Prem Student Notes</title>
 
 <style>
 body{
-  font-family: Arial;
-  background-color:#f2f2f2;
-  text-align:center;
+    font-family: Arial;
+    background: linear-gradient(135deg,#74ebd5,#ACB6E5);
+    margin:0;
 }
 
 .container{
-  background:white;
-  margin:40px;
-  padding:20px;
-  border-radius:10px;
-  box-shadow:0 0 10px gray;
+    max-width:800px;
+    margin:40px auto;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
 
 h1{
-  color:#2c3e50;
+    text-align:center;
 }
 
-.note{
-  background:#e6f2ff;
-  margin:15px;
-  padding:15px;
-  border-radius:8px;
+.card{
+    background:#f2f6ff;
+    padding:20px;
+    margin:15px 0;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.03);
 }
 
 button{
-  background:#007BFF;
-  color:pink;
-  border:none;
-  padding:10px 20px;
-  border-radius:5px;
-  font-size:16px;
+    background:#007BFF;
+    color:white;
+    border:none;
+    padding:12px 18px;
+    border-radius:8px;
+    cursor:pointer;
 }
 
 button:hover{
-  background:#0056b3;
+    background:#0056b3;
 }
 </style>
-
 </head>
 
 <body>
 
+<div class="container">
 <h1>📚 Prem Student Notes</h1>
 
-<div class="container">
-
-<div class="note">
+<div class="card">
 <h2>🔥 Trigonometry Formula</h2>
 <p>sin²θ + cos²θ = 1</p>
 </div>
 
-<div class="note">
+<div class="card">
 <h2>⚡ Physics Formula</h2>
 <p>Speed = Distance / Time</p>
 </div>
 
-<div class="note">
+<div class="card">
 <h2>✅ Exam Tip</h2>
 <p>Sabse easy questions pehle solve karo 😎</p>
 </div>
 
-<button onclick="showMessage()">Follow for Daily Notes</button>
+<center>
+<button onclick="alert('Daily notes coming soon!')">
+Follow for Daily Notes
+</button>
+</center>
 
 </div>
 
-<script>
-function showMessage(){
-  alert("🔥 Daily visit karo aur topper bano!");
-}
-</script>
-
 </body>
 </html>
-<p><b>Date:</b> 7 Feb 2026</p>
