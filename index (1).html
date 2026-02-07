@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Prem Gupta | Premium Developer</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+background: linear-gradient(135deg,#0f172a,#020617);
+color:white;
+text-align:center;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:45px;
+}
+
+.typing{
+color:#38bdf8;
+font-size:24px;
+margin:10px 0;
+font-weight:bold;
+}
+
+/* GLASS CARD */
+
+.glass{
+background: rgba(255,255,255,0.05);
+backdrop-filter: blur(10px);
+border-radius:15px;
+padding:25px;
+margin:20px;
+box-shadow:0 0 25px rgba(0,0,0,0.3);
+}
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+margin:10px;
+padding:14px 28px;
+border-radius:10px;
+background:linear-gradient(45deg,#38bdf8,#6366f1);
+border:none;
+color:white;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+}
+
+/* SERVICES */
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+padding:20px;
+}
+
+.card{
+background:#020617;
+margin:15px;
+padding:30px;
+border-radius:15px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 10px 30px rgba(56,189,248,0.3);
+}
+
+/* FOOTER */
+
+footer{
+margin-top:40px;
+padding:20px;
+background:black;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+
+<h1>Hi, I'm Prem Gupta</h1>
+
+<div class="typing" id="typing"></div>
+
+<div class="glass">
+Professional App & Website Developer helping businesses grow with powerful digital solutions.
+</div>
+
+<button class="btn"
+onclick="window.location.href='tel:+916289611588'">
+📞 Call Me
+</button>
+
+<button class="btn"
+onclick="window.location.href='https://wa.me/916289611588?text=Hello%20Prem%20I%20want%20to%20hire%20you'">
+💬 WhatsApp Me
+</button>
+
+</div>
+
+<!-- ABOUT -->
+
+<div class="glass">
+
+<h2>About Me</h2>
+
+<p>
+Hello! I'm Prem Gupta — a passionate developer who builds
+modern apps and websites that attract customers and grow businesses.
+
+✔ Fast Delivery  
+✔ Premium Design  
+✔ Affordable Price  
+✔ 100% Client Satisfaction
+</p>
+
+</div>
+
+<!-- SERVICES -->
+
+<h2>My Services</h2>
+
+<div class="services">
+
+<div class="card">📱 Mobile App Development</div>
+<div class="card">💻 Website Development</div>
+<div class="card">🎨 UI/UX Design</div>
+<div class="card">🚀 Business Solutions</div>
+
+</div>
+
+<!-- HIRE -->
+
+<div class="glass">
+
+<h2>Let's Build Something Great!</h2>
+
+<p>
+Have an idea? Let's turn it into a powerful digital product.
+Contact me today and get your project started.
+</p>
+
+</div>
+
+<footer>
+© 2026 Prem Gupta | All Rights Reserved
+</footer>
+
+<script>
+
+// TYPING EFFECT
+
+const texts=["Premium Developer","App Creator","Entrepreneur","Freelancer"];
+
+let count=0;
+let index=0;
+let currentText="";
+let letter="";
+
+function type(){
+
+if(count === texts.length){
+count=0;
+}
+
+currentText=texts[count];
+letter=currentText.slice(0, ++index);
+
+document.getElementById("typing").textContent=letter;
+
+if(letter.length === currentText.length){
+count++;
+index=0;
+}
+
+setTimeout(type,120);
+}
+
+type();
+
+</script>
+
+</body>
+</html>
